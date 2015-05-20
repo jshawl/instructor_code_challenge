@@ -15,8 +15,7 @@ app.get('/favorites', function(req, res){
   var data = fs.readFileSync('./data.json')
   res.setHeader('Content-Type', 'application/json')
   res.send(data)
-  res.render("data")
-})
+S})
 // note .name/.old for post
 app.post('/favorites', function(req, res){
   if(!req.body.name || !req.body.oid){
